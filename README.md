@@ -1,1 +1,33 @@
-# A_B_test_CookieCat_user_logs_analysis
+### **[프로젝트 설명]**
+
+kaggle에 공개 된 모바일 캐주얼 모바일 퍼즐 게임입니다. 게임을 플레이하다보면 유저들은 게이트를 만납니다. 게이트를 만나면 유저는 꽤 오랜 시간을 기다리거나 결제를 해야만 합니다. 
+
+설계 된 AB 테스트는 유저가 첫번째 게이트에 도달하는 시점을 30 라운드에서 40 라운드로 옮겼을 때, 리텐션에 어떤 변화가 있는지를 테스트 한 데이터입니다. 유저들은 무작위로 gate_30 혹은 gate_40 그룹에 할당되며, 설치 후 1일 뒤에도 다시 접속했는지(retention 1), 설치 후 7일 뒤에도 다시 접속했는지 여부(retention 7)를 측정합니다.
+
+Cookie Cat의 A/B 테스트 데이터를 분석하여,  gate_30에서 gate_40으로 gate 도달 단계를 변경했을 경우, 유저 리텐션에 유의미한 변화가 있었는지 통계적 검증을 통해 결과를 도출합니다.
+
+----
+
+### **[목차]**
+
+1.  데이터 구성 및 전처리
+
+    [Kaggle 쿠키캣 모바일 게임 A/B 테스트 데이터셋] 
+    (https://www.kaggle.com/datasets/mursideyarkin/mobile-games-ab-testing-cookie-cats)
+
+    유저 retention 조건에 따라 데이터 1차 분류 후, IQR 사분위수 사용하여 이상치 삭제
+
+2.  EDA
+
+3.  T test 검정
+
+    등분산 검정
+
+    양측 검정
+
+4.  Chi square test 검정
+
+5. 결론
+
+----
+2024Ⓒ 👾 nuri Park
